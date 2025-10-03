@@ -1,0 +1,78 @@
+body {
+  background: #001a33; /* deep blue background */
+  color: #e5e5e5;
+  font-family: "Fira Code", monospace;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.terminal {
+  background: #0d0d0d; /* dark inner terminal */
+  border-radius: 6px;
+  width: 850px;
+  max-width: 95%;
+  box-shadow: 0 0 25px rgba(0,0,0,0.9);
+  overflow: hidden;
+}
+
+.terminal-header {
+  display: flex;
+  gap: 6px;
+  padding: 8px 12px;
+  background: #222;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.red { background: #ff5f56; }
+.yellow { background: #ffbd2e; }
+.green { background: #27c93f; }
+
+.terminal-body {
+  padding: 20px;
+  height: 450px;
+  overflow-y: auto;
+  line-height: 1.5;
+}
+
+.terminal-line {
+  margin: 2px 0;
+  white-space: pre; /* preserve ASCII art formatting */
+}
+
+form {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.prompt {
+  margin-right: 5px;
+  color: #2ee1fa; /* cyan prompt like screenshot */
+}
+
+input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #e5e5e5;
+  font-family: "Fira Code", monospace;
+  font-size: 1rem;
+  width: 100%;
+}
+
+a {
+  color: #2ee1fa;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
