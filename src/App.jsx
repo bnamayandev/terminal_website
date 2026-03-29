@@ -65,6 +65,12 @@ const projects = [
   },
 ]
 
+const metrics = [
+  { value: '3', label: 'internships shipped' },
+  { value: '8', label: 'languages used often' },
+  { value: '85%+', label: 'test coverage pushed' },
+]
+
 function App() {
   useEffect(() => {
     const nodes = document.querySelectorAll('.reveal')
@@ -91,9 +97,25 @@ function App() {
 
   return (
     <div className="page-shell">
-      <div className="background-orb orb-one" />
-      <div className="background-orb orb-two" />
-      <div className="background-orb orb-three" />
+      <div className="background-scene" aria-hidden="true">
+        <div className="scene-orb orb-left" />
+        <div className="scene-orb orb-right" />
+        <div className="scene-grid" />
+        <div className="scene-shape shape-cube">
+          <span />
+          <span />
+          <span />
+        </div>
+        <div className="scene-shape shape-ring" />
+        <div className="scene-shape shape-column">
+          <span />
+          <span />
+          <span />
+        </div>
+      </div>
+
+      <div className="background-glow glow-one" />
+      <div className="background-glow glow-two" />
 
       <header className="topbar">
         <a className="brand" href="#home">
@@ -106,51 +128,71 @@ function App() {
         </nav>
       </header>
 
-      <main id="home">
+      <main id="home" className="page-content">
         <section className="hero reveal visible">
           <div className="hero-copy">
-            <p className="intro-line">Software engineering student, builder, and serial tinkerer</p>
-            <h1>
-              <span>Hi, I&apos;m </span>
-              <strong>Ben</strong>
-            </h1>
+            <p className="eyebrow">Software engineering student</p>
+            <h1>I build software that feels clear, fast, and a little more human.</h1>
             <p className="hero-text">
-              I build software that is practical, fast, and a little bit playful. My work lives across
-              fintech, research, AI, and product engineering.
+              I like working on the part where solid engineering meets good taste: shaping backend
+              systems, tightening interfaces, and making complicated products feel easier to use.
             </p>
+
+            <div className="hero-actions">
+              <a className="primary-link" href="#projects">
+                View projects
+              </a>
+              <a className="secondary-link" href="#experience">
+                See experience
+              </a>
+            </div>
           </div>
 
-          <div className="hero-note">
-            <p>
-              Currently focused on shipping clean production work, learning aggressively, and making
-              technical systems feel much more human.
+          <aside className="hero-panel">
+            <p className="eyebrow">Current focus</p>
+            <p className="hero-panel-copy">
+              Right now I&apos;m shipping production work at RBC, paying close attention to the
+              tiny details that make large systems feel calmer, and getting sharper at building
+              things that are both reliable and pleasant to use.
             </p>
-          </div>
+
+            <div className="metrics-grid">
+              {metrics.map((metric) => (
+                <div key={metric.label} className="metric-card">
+                  <strong>{metric.value}</strong>
+                  <span>{metric.label}</span>
+                </div>
+              ))}
+            </div>
+          </aside>
         </section>
 
         <section className="content-block reveal" id="languages">
-          <div className="section-heading">
-            <p>Languages</p>
-            <h2>The tools I reach for most</h2>
+          <div className="section-heading section-heading-inline">
+            <div>
+              <p>Languages</p>
+              <h2>Tools I actually reach for.</h2>
+            </div>
+            <span className="section-note">Mostly the stack I keep coming back to when work gets real.</span>
           </div>
 
-          <div className="language-grid">
+          <div className="language-cluster">
             {languages.map((language, index) => (
-              <article
+              <span
                 key={language}
-                className="language-card"
-                style={{ transitionDelay: `${index * 70}ms` }}
+                className="language-pill"
+                style={{ transitionDelay: `${index * 45}ms` }}
               >
-                <span>{language}</span>
-              </article>
+                {language}
+              </span>
             ))}
           </div>
         </section>
 
         <section className="content-block reveal" id="experience">
           <div className="section-heading">
-            <p>Past Experience</p>
-            <h2>Places where I learned by building</h2>
+            <p>Experience</p>
+            <h2>Places where I learned the most by building.</h2>
           </div>
 
           <div className="experience-stack">
@@ -162,8 +204,8 @@ function App() {
               >
                 <div className="experience-heading">
                   <div>
-                    <h3>{item.role}</h3>
                     <p className="experience-company">{item.company}</p>
+                    <h3>{item.role}</h3>
                   </div>
                   <span>{item.period}</span>
                 </div>
@@ -181,9 +223,12 @@ function App() {
         </section>
 
         <section className="content-block reveal" id="projects">
-          <div className="section-heading">
-            <p>Projects</p>
-            <h2>Things I&apos;ve built and shipped</h2>
+          <div className="section-heading section-heading-inline">
+            <div>
+              <p>Projects</p>
+              <h2>Things I&apos;ve made and cared about.</h2>
+            </div>
+            <span className="section-note">A mix of production work, AI experiments, and practical engineering.</span>
           </div>
 
           <div className="project-grid">
