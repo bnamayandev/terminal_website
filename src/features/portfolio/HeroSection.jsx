@@ -1,14 +1,17 @@
-import RevealSection from './RevealSection'
+import RevealSection from '../../shared/components/RevealSection'
+
+import HeroMetrics from './components/HeroMetrics'
 
 function HeroSection({ metrics, socialLinks }) {
   return (
     <RevealSection className="hero" immediate>
       <div className="hero-copy">
         <p className="eyebrow">Software engineering student</p>
-        <h1>I build software that feels clear, fast, and a little more human.</h1>
+        <h1>I build software that feels clear, fast, and easy to trust.</h1>
         <p className="hero-text">
-          I like working on the part where solid engineering meets good taste: shaping backend
-          systems, tightening interfaces, and making complicated products feel easier to use.
+          I like working on the part where strong engineering meets careful product thinking:
+          building backend systems, cleaning up rough interfaces, and making complicated tools feel
+          simpler than they are.
         </p>
 
         <div className="hero-actions">
@@ -33,23 +36,15 @@ function HeroSection({ metrics, socialLinks }) {
         <div>
           <p className="eyebrow">Current focus</p>
           <p className="hero-panel-copy">
-            Right now I&apos;m shipping production work at RBC, paying close attention to the tiny
-            details that make large systems feel calmer, and getting sharper at building things
-            that are both reliable and pleasant to use.
+            Right now I&apos;m working on production systems at RBC and paying close attention to
+            the small details that make large products easier to use, easier to maintain, and less
+            frustrating for the people relying on them every day.
           </p>
         </div>
 
         <div className="hero-panel-footer">
-          <p className="hero-panel-tagline">Calm systems. Sharp details. Slightly more fun than they need to be.</p>
-
-          <div className="metrics-grid">
-            {metrics.map((metric) => (
-              <div key={metric.label} className="metric-card">
-                <strong>{metric.value}</strong>
-                <span>{metric.label}</span>
-              </div>
-            ))}
-          </div>
+          <p className="hero-panel-tagline">Good systems, careful details, and a low tolerance for unnecessary friction.</p>
+          <HeroMetrics metrics={metrics} />
         </div>
       </aside>
     </RevealSection>

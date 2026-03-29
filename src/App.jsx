@@ -1,9 +1,9 @@
-import BackgroundScene from './components/BackgroundScene'
-import ExperienceSection from './components/ExperienceSection'
-import HeroSection from './components/HeroSection'
-import LanguagesSection from './components/LanguagesSection'
-import ProjectsSection from './components/ProjectsSection'
-import { experiences, languages, metrics, projects, socialLinks } from './data/portfolio'
+import BackgroundScene from './features/background/BackgroundScene'
+import ExperienceSection from './features/portfolio/ExperienceSection'
+import HeroSection from './features/portfolio/HeroSection'
+import LanguagesSection from './features/portfolio/LanguagesSection'
+import ProjectsSection from './features/portfolio/ProjectsSection'
+import { experiences, languages, metrics, projects, socialLinks } from './content/portfolio'
 
 function App() {
   return (

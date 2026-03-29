@@ -1,5 +1,5 @@
-import RevealSection from './RevealSection'
-import SectionHeading from './SectionHeading'
+import RevealSection from '../../shared/components/RevealSection'
+import SectionHeading from '../../shared/components/SectionHeading'
 
 function LanguagesSection({ languages }) {
   return (
@@ -7,7 +7,7 @@ function LanguagesSection({ languages }) {
       <SectionHeading
         eyebrow="Languages"
         title="Tools I actually reach for."
-        note="Mostly the stack I keep coming back to when work gets real."
+        note="Mostly the languages I keep using when something needs to be built properly."
         inline
       />
 

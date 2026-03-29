@@ -1,4 +1,4 @@
-import useRevealOnScroll from '../hooks/useRevealOnScroll'
+import useRevealOnScroll from '../../hooks/useRevealOnScroll'
 
 function RevealSection({ as = 'section', children, className = '', immediate = false, id }) {
   const { isVisible, ref } = useRevealOnScroll({ disabled: immediate })
