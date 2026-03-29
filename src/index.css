@@ -270,21 +270,6 @@ a,
   animation: floatTwo 16s ease-in-out infinite;
 }
 
-.topbar {
-  position: sticky;
-  top: 0;
-  z-index: 20;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 34px;
-  padding: 14px 0 12px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.55);
-  background: linear-gradient(180deg, rgba(255, 248, 239, 0.92), rgba(255, 248, 239, 0.78));
-  backdrop-filter: blur(18px);
-  box-shadow: var(--shadow);
-}
-
-.topbar nav a,
 .eyebrow,
 .section-heading p,
 .section-note,
@@ -298,28 +283,6 @@ a,
   text-transform: uppercase;
 }
 
-.topbar nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 12px;
-}
-
-.topbar nav a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 42px;
-  padding: 0.78rem 1rem;
-  border: 1px solid rgba(24, 21, 18, 0.08);
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.52);
-  font-size: 0.78rem;
-  font-weight: 700;
-  color: var(--text-soft);
-}
-
-.topbar nav a:hover,
 .language-pill:hover,
 .experience-card:hover,
 .project-card:hover,
@@ -844,21 +807,6 @@ a,
     right: -5rem;
     width: 12rem;
     height: 12rem;
-  }
-
-  .topbar {
-    padding: 12px 0 10px;
-    margin-bottom: 24px;
-  }
-
-  .topbar nav {
-    justify-content: flex-start;
-    gap: 10px;
-  }
-
-  .topbar nav a {
-    min-height: 38px;
-    padding: 0.7rem 0.9rem;
   }
 
   .hero-copy,
