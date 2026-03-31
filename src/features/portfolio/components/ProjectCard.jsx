@@ -10,7 +10,7 @@ function ProjectCard({ project, index }) {
       <p className="project-label">{project.label}</p>
       <h3>{project.name}</h3>
       <p>{project.description}</p>
-      <span className="project-link">Open project</span>
+      <span className="project-link">View project</span>
     </a>
   )
 }

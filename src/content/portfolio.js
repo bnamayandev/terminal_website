@@ -40,47 +40,32 @@ export const skillGroups = [
 
 export const experiences = [
   {
-    role: 'Software Developer Intern',
+    role: 'Software Engineer Intern',
     company: 'Royal Bank of Canada',
     period: 'Jan 2026 - Present',
     blurb:
-      'I work on RBC Express with a focus on making a large, complicated banking product feel clearer and less tedious to use.',
-    details: [
-      'Built frontend and backend features across Angular and Java services.',
-      'Pushed production services above 85% test coverage with unit and integration tests.',
-      'Improved reliability and cut friction for a large corporate banking user base.',
-    ],
+      'Worked on RBC\'s business banking portal (Angular and Springboot stack). Shipped features to 95,000+ corporate clients while maintaining 85% test coverage.',
   },
   {
     role: 'Research Assistant',
     company: 'Western University',
     period: 'May 2025 - Sep 2025',
     blurb:
-      'I worked on underground robotics research, mostly around helping autonomous systems map reliably in places where the environment makes that hard.',
-    details: [
-      'Worked on autonomous tunnel navigation and anomaly detection.',
-      'Built SLAM and sensor-fusion workflows for cleaner underground mapping.',
-      'Reduced mapping drift and improved perception performance in constrained environments.',
-    ],
+      'Spent the term working on robots for underground tunnels, mainly building out mapping, sensor-fusion, and anomaly-detection pipelines for autonomous systems.',
   },
   {
     role: 'Software Engineering Intern',
     company: 'Alere',
     period: 'May 2025 - Aug 2025',
     blurb:
-      'I built food scanning features that could read labels, store results, and help people avoid ingredients they were trying not to eat.',
-    details: [
-      'Built barcode and OCR scanning workflows with cloud vision services.',
-      'Created image history infrastructure with fast retrieval.',
-      'Designed allergen-safe recommendation logic based on dietary constraints.',
-    ],
+      'Built food scanning features around barcode and OCR flows, added image history support, and helped shape the allergy-aware logic behind the product.',
   },
 ]
 
 export const projects = [
   {
     name: 'Thermal Detection Model',
-    href: 'https://github.com/BenjaminNamayandev/AIC-GM-Comp2025',
+    href: 'https://www.linkedin.com/posts/benjamin-namayandeh_westernengineering-automotiveinnovation-federatedlearning-activity-7304679819277934593-4DXO?utm_source=share&utm_medium=member_desktop&rcm=ACoAADZRGFYBdz1U1PYajPNJBJzjdoBs7ngbXhU',
     label: 'Hackathon winner',
     description:
       'A thermal detection system tuned for Raspberry Pi deployment, with model compression and enough performance work to run well on limited hardware.',

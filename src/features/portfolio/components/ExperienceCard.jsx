@@ -13,12 +13,6 @@ function ExperienceCard({ experience, index }) {
       </div>
 
       <p className="experience-blurb">{experience.blurb}</p>
-
-      <ul>
-        {experience.details.map((detail) => (
-          <li key={detail}>{detail}</li>
-        ))}
-      </ul>
     </article>
   )
 }
