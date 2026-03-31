@@ -1,4 +1,5 @@
 import BackgroundScene from './features/background/BackgroundScene'
+import ContactSection from './features/portfolio/ContactSection'
 import ExperienceSection from './features/portfolio/ExperienceSection'
 import HeroSection from './features/portfolio/HeroSection'
 import LanguagesSection from './features/portfolio/LanguagesSection'
@@ -18,6 +19,7 @@ function App() {
         <LanguagesSection skillGroups={skillGroups} />
         <ExperienceSection experiences={experiences} />
         <ProjectsSection projects={projects} />
+        <ContactSection />
       </main>
     </div>
   )

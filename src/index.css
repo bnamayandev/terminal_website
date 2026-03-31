@@ -501,7 +501,8 @@ a,
 }
 
 .experience-stack,
-.project-grid {
+.project-grid,
+.contact-grid {
   display: grid;
   gap: 18px;
 }
@@ -574,6 +575,64 @@ a,
   margin-top: auto;
   padding-top: 1.5rem;
   color: var(--accent-deep);
+}
+
+.site-footer {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  margin: 22px 0 8px;
+  padding: 1rem 1.4rem;
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  border-radius: 24px;
+  background:
+    radial-gradient(circle at top right, rgba(255, 209, 102, 0.16), transparent 32%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.74), rgba(255, 248, 239, 0.88)),
+    var(--surface);
+  backdrop-filter: blur(20px);
+  box-shadow: var(--shadow);
+}
+
+.site-footer-note,
+.site-footer-link span {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-soft);
+}
+
+.site-footer-note {
+  margin: 0;
+}
+
+.site-footer-contacts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.site-footer-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-height: 44px;
+  padding: 0 1rem;
+  border: 1px solid rgba(24, 21, 18, 0.08);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.site-footer-link strong {
+  font-size: 0.96rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--accent-deep);
+  word-break: break-word;
 }
 
 .reveal {
@@ -720,5 +779,31 @@ a,
 
   .experience-heading {
     flex-direction: column;
+  }
+
+  .site-footer,
+  .site-footer-contacts,
+  .site-footer-link {
+    align-items: flex-start;
+  }
+
+  .site-footer {
+    flex-direction: column;
+    padding: 1rem 1.1rem;
+    border-radius: 20px;
+  }
+
+  .site-footer-contacts {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .site-footer-link {
+    width: 100%;
+    min-height: 0;
+    padding: 0.85rem 1rem;
+    border-radius: 18px;
+    flex-direction: column;
+    gap: 0.35rem;
   }
 }
