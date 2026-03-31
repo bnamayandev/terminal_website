@@ -7,9 +7,7 @@ function ProjectsSection({ projects }) {
   return (
     <RevealSection className="content-block" id="projects">
       <SectionHeading
-        eyebrow="Projects"
-        title="Things I&apos;ve made and cared about."
-        note="A mix of shipped work, side projects, and experiments that were worth finishing."
+        title="Projects"
         inline
       />
 

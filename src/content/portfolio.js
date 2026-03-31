@@ -1,12 +1,41 @@
-export const languages = [
-  'Python',
-  'Java',
-  'TypeScript',
-  'C++',
-  'Go',
-  'Rust',
-  'SQL',
-  'JavaScript',
+export const skillGroups = [
+  {
+    title: 'Languages',
+    items: [
+      { label: 'Python', icon: 'python' },
+      { label: 'Java', icon: 'java' },
+      { label: 'TypeScript', icon: 'typescript' },
+      { label: 'C', icon: 'c' },
+      { label: 'C++', icon: 'cpp' },
+      { label: 'Go', icon: 'go' },
+      { label: 'Rust', icon: 'rust' },
+      { label: 'C#', icon: 'csharp' },
+      { label: 'SQL', icon: 'sql' },
+    ],
+  },
+  {
+    title: 'Frameworks',
+    items: [
+      { label: 'Spring Boot', icon: 'springBoot' },
+      { label: 'Angular', icon: 'angular' },
+      { label: 'React', icon: 'react' },
+      { label: 'Node.js', icon: 'nodejs' },
+      { label: 'Express.js', icon: 'expressjs' },
+      { label: 'FastAPI', icon: 'fastapi' },
+      { label: 'PyTorch', icon: 'pytorch' },
+    ],
+  },
+  {
+    title: 'Tools & Platforms',
+    items: [
+      { label: 'Git', icon: 'git' },
+      { label: 'Linux', icon: 'linux' },
+      { label: 'Docker', icon: 'docker' },
+      { label: 'Firebase', icon: 'firebase' },
+      { label: 'AWS (S3, ELB, EC2)', icon: 'aws' },
+      { label: 'MongoDB', icon: 'mongodb' },
+    ],
+  },
 ]
 
 export const experiences = [
@@ -70,12 +99,6 @@ export const projects = [
     description:
       'A full-stack storefront for merch sales with cleaner inventory handling and a setup that was easier for the team to run.',
   },
-]
-
-export const metrics = [
-  { value: '3', label: 'internships shipped' },
-  { value: '8', label: 'languages used often' },
-  { value: '85%+', label: 'test coverage pushed' },
 ]
 
 export const socialLinks = [

@@ -3,7 +3,7 @@ import ExperienceSection from './features/portfolio/ExperienceSection'
 import HeroSection from './features/portfolio/HeroSection'
 import LanguagesSection from './features/portfolio/LanguagesSection'
 import ProjectsSection from './features/portfolio/ProjectsSection'
-import { experiences, languages, metrics, projects, socialLinks } from './content/portfolio'
+import { experiences, projects, skillGroups, socialLinks } from './content/portfolio'
 
 function App() {
   return (
@@ -14,8 +14,8 @@ function App() {
       <div className="background-glow glow-two" />
 
       <main id="home" className="page-content">
-        <HeroSection metrics={metrics} socialLinks={socialLinks} />
-        <LanguagesSection languages={languages} />
+        <HeroSection socialLinks={socialLinks} />
+        <LanguagesSection skillGroups={skillGroups} />
         <ExperienceSection experiences={experiences} />
         <ProjectsSection projects={projects} />
       </main>
