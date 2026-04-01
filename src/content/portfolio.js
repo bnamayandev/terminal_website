@@ -101,9 +101,16 @@ export const projects = [
   {
     name: 'Recipeit',
     href: 'https://github.com/redmac135/recipe.it',
-    label: 'Mobile + AI',
+    label: 'Hackathon winner',
     description:
       'A pantry and recipe app built to help people use ingredients before they expired and figure out what to cook with what they already had.',
+  },
+  {
+    name: '2Blue2Brown',
+    href: 'https://github.com/sprwoo/2blue2brown',
+    label: 'Hackathon winner',
+    description:
+      'This is a GPT wrapper app where users can prompt a fine-tuned LLM to make educational videos on whatever topics they want. It uses the Manim library to mimic the style of Youtuber 3Blue1Brown.',
   },
   {
     name: 'Western Baja Online Storefront',
