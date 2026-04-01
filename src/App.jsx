@@ -15,11 +15,17 @@ function App() {
       <div className="background-glow glow-two" />
 
       <main id="home" className="page-content">
-        <HeroSection socialLinks={socialLinks} />
-        <LanguagesSection skillGroups={skillGroups} />
-        <ExperienceSection experiences={experiences} />
-        <ProjectsSection projects={projects} />
-        <ContactSection />
+        <div className="portfolio-suite">
+          <HeroSection socialLinks={socialLinks} />
+          <div className="section-divider" aria-hidden="true" />
+          <LanguagesSection skillGroups={skillGroups} />
+          <div className="section-divider" aria-hidden="true" />
+          <ExperienceSection experiences={experiences} />
+          <div className="section-divider" aria-hidden="true" />
+          <ProjectsSection projects={projects} />
+          <div className="section-divider" aria-hidden="true" />
+          <ContactSection />
+        </div>
       </main>
     </div>
   )

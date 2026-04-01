@@ -40,25 +40,53 @@ export const skillGroups = [
 
 export const experiences = [
   {
-    role: 'Software Engineer Intern',
-    company: 'Royal Bank of Canada',
-    period: 'Jan 2026 - Present',
-    blurb:
-      'Worked on RBC\'s business banking portal (Angular and Springboot stack). Shipped features to 95,000+ corporate clients while maintaining 85% test coverage.',
+    role: 'Software Developer',
+    company: 'RBC',
+    type: 'Internship',
+    location: 'Toronto, Ontario, Canada · Hybrid',
+    start: '2026-01',
+    end: 'present',
+    summary:
+      "Built features for RBC's business banking portal using Angular and Spring Boot, shipping to 95,000+ corporate clients while helping maintain 85% test coverage.",
+  },
+  {
+    role: 'Founding Engineer',
+    company: 'BarCoded Inc.',
+    location: 'Ontario, Canada',
+    start: '2025-02',
+    end: '2025-10',
+    summary:
+      'Part of the founding team at an athletic-tech startup, helping build the MVP and develop early proofs of concept.',
   },
   {
     role: 'Research Assistant',
     company: 'Western University',
-    period: 'May 2025 - Sep 2025',
-    blurb:
-      'Spent the term working on robots for underground tunnels, mainly building out mapping, sensor-fusion, and anomaly-detection pipelines for autonomous systems.',
+    type: 'Contract Part-time',
+    location: 'London, Ontario, Canada',
+    start: '2025-05',
+    end: '2025-09',
+    summary:
+      'Worked under Professor Mohamed Zaki on fault detection for autonomous vehicles in underground tunnels using LiDAR, SLAM, and machine learning. Built and tested a Python pipeline on a Clearpath Robotics Husky A300 using LiDAR and depth-camera data to validate real-world detection performance.',
   },
   {
-    role: 'Software Engineering Intern',
-    company: 'Alere',
-    period: 'May 2025 - Aug 2025',
-    blurb:
-      'Built food scanning features around barcode and OCR flows, added image history support, and helped shape the allergy-aware logic behind the product.',
+    role: 'Software Engineer Intern',
+    company: 'Stealth Startup',
+    type: 'Internship',
+    location: 'Toronto, Ontario, Canada',
+    start: '2025-05',
+    end: '2025-08',
+    summary:
+      'Worked at a Canadian startup focused on food allergen detection, collaborating in a small team on an AI pipeline designed for high-accuracy results.',
+  },
+  {
+    role: 'Summer Camp Instructor',
+    company: 'Young Engineers e2',
+    type: 'Seasonal',
+    location: 'Mississauga, Ontario, Canada',
+    start: '2023-07',
+    end: '2023-08',
+    summary:
+      'Taught young students foundational mechanical engineering and physics concepts in a summer camp setting while supervising activities and maintaining a safe environment.',
   },
 ]
 
