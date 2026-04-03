@@ -785,22 +785,95 @@ a,
 }
 
 .project-card {
+  position: relative;
   display: flex;
-  flex-direction: column;
-  min-height: 100%;
+  align-items: flex-end;
+  min-height: 280px;
   padding: 1.7rem;
   background: rgba(255, 245, 232, 0.94);
+  overflow: hidden;
 }
 
-.project-card p {
-  margin: 0.85rem 0 0;
+.project-card-body {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 0.55rem;
+  width: 100%;
+  transition:
+    transform 440ms cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 260ms ease;
+}
+
+.project-card h3,
+.project-card .project-label {
+  transition:
+    transform 440ms cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 260ms ease;
+}
+
+.project-card .project-label {
+  margin: 0;
+}
+
+.project-description-panel {
+  position: absolute;
+  inset: auto 0 0;
+  z-index: 2;
+  min-height: 100%;
+  padding: 1.7rem;
+  display: flex;
+  align-items: flex-end;
+  background: linear-gradient(180deg, rgba(130, 97, 67, 0.98), rgba(94, 67, 46, 1));
+  transform: translateY(100%);
+  transition:
+    transform 520ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.project-description-panel p {
+  margin: 0;
   line-height: 1.7;
+  color: rgba(255, 248, 239, 0.96);
 }
 
-.project-link {
-  margin-top: auto;
-  padding-top: 1.5rem;
-  color: var(--accent-deep);
+.project-card:hover .project-description-panel,
+.project-card:focus-visible .project-description-panel {
+  transform: translateY(0);
+}
+
+.project-card:hover .project-card-body,
+.project-card:focus-visible .project-card-body {
+  transform: translateY(-0.35rem);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .project-card:hover h3,
+  .project-card:hover .project-label,
+  .project-card:focus-visible h3,
+  .project-card:focus-visible .project-label {
+    opacity: 0.12;
+    transform: translateY(-0.2rem);
+  }
+}
+
+@media (hover: none), (pointer: coarse) {
+  .project-card {
+    align-items: stretch;
+    min-height: auto;
+  }
+
+  .project-card-body {
+    gap: 0.4rem;
+  }
+
+  .project-description-panel {
+    position: static;
+    margin-top: 1rem;
+    inset: auto;
+    padding: 1rem;
+    min-height: auto;
+    transform: none;
+  }
 }
 
 .site-footer {

@@ -7,10 +7,13 @@ function ProjectCard({ project, index }) {
       rel="noreferrer"
       style={{ transitionDelay: `${index * 90}ms` }}
     >
-      <p className="project-label">{project.label}</p>
-      <h3>{project.name}</h3>
-      <p>{project.description}</p>
-      <span className="project-link">View project</span>
+      <div className="project-card-body">
+        <h3>{project.name}</h3>
+        <p className="project-label">{project.label}</p>
+      </div>
+      <div className="project-description-panel">
+        <p>{project.description}</p>
+      </div>
     </a>
   )
 }
