@@ -288,6 +288,7 @@ a,
 }
 
 .hero h1,
+.baja-page h1,
 .section-heading h2,
 .experience-card h3,
 .project-card h3 {
@@ -304,6 +305,7 @@ a,
 }
 
 .hero-text,
+.baja-page-copy,
 .hero-panel-copy,
 .experience-blurb,
 .experience-card li,
@@ -326,6 +328,38 @@ a,
 }
 
 .hero-actions {
+  margin-top: 2rem;
+}
+
+.baja-page {
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  min-height: min(680px, calc(100vh - 48px));
+  padding: clamp(3rem, 8vw, 6rem) 2rem;
+  text-align: center;
+}
+
+.baja-page h1 {
+  max-width: 10ch;
+  margin: 0.8rem 0 1rem;
+  font-size: clamp(4rem, 10vw, 7rem);
+  line-height: 0.92;
+  letter-spacing: -0.05em;
+}
+
+.baja-page-copy {
+  max-width: 34rem;
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.baja-page-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
   margin-top: 2rem;
 }
 
