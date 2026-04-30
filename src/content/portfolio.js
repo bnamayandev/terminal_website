@@ -114,7 +114,7 @@ export const projects = [
   },
   {
     name: 'Western Baja Online Storefront',
-    href: 'https://shopwesternbaja.com',
+    href: '/bajaecom',
     label: 'Production product',
     description:
       'A full-stack storefront for merch sales with cleaner inventory handling and a setup that was easier for the team to run.',

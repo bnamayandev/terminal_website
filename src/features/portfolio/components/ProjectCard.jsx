@@ -1,10 +1,12 @@
 function ProjectCard({ project, index }) {
+  const isExternalLink = /^https?:\/\//.test(project.href)
+
   return (
     <a
       className="project-card"
       href={project.href}
-      target="_blank"
-      rel="noreferrer"
+      target={isExternalLink ? '_blank' : undefined}
+      rel={isExternalLink ? 'noreferrer' : undefined}
       style={{ transitionDelay: `${index * 90}ms` }}
     >
       <div className="project-card-body">
